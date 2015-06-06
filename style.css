@@ -1,0 +1,54 @@
+.card {
+	min-height: 100px;
+}
+
+.rank {
+	float: left;
+  	color: #c6c6c6;
+  	font-family: arial;
+  	font-size: medium;
+  	text-align: right;
+  	margin-top: 15px;
+}
+
+.thumbnail {
+	float: left;
+	margin-left: 10px;
+}
+
+.vote {
+	width: 22px;
+	height: 34px;
+	float: left;
+	margin-left: 10px;
+}
+
+.upvote {
+	background: url(img/updown.png) 0 0;
+	background-color: transparent;
+	width: 22px;
+	height: 17px;
+}
+
+.downvote {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	background: url(img/updown.png) 0 -17px;
+	width: 22px;
+	height: 17px;
+}
+
+.score {
+	width: 100%;
+	text-align: center;
+	font: normal x-small verdana,arial,helvetica,sans-serif !important;
+	display: block;
+	color: #AAA;
+}
+
+.mainPost {
+	display: inline-block;
+	width: 500px;
+	padding-left: 10px;
+}
