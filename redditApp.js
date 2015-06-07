@@ -33,9 +33,11 @@ function buildCard(i, data) {
 	var html = '<div class="card">';
 	html += '<span class="rank">'+i+"</span>";
 	html += '<div class="vote"><div class="upvote"></div><div class="score">'+data.score+'</div><div class="downvote"></div></div>'
-	html += '<a class="thumbnail" href="'+data.url+'"><img src="'+data.thumbnail+'" width="60" height="60"></a>';
+	if (data.thumbnail.indexOf(".") >= 0) {
+		html += '<a target="_blank" class="thumbnail" href="'+data.url+'"><img src="'+data.thumbnail+'" width="60" height="60"></a>';
+	}
 	html += '<div class="mainPost">';
-	html += '<a class="title" href="'+data.url+'">'+data.title+'</a>';
+	html += '<a target="_blank" class="title" href="'+data.url+'">'+data.title+'</a>';
 	html += '</div>';
 	html += '<div class="commentButton" onclick="openComments(\"'+data.permalink+'\")"></div>';
 	html += '</div>';
