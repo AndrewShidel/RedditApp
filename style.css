@@ -14,10 +14,12 @@
 }
 
 .commentImg {
+	position: absolute;
 	width: 32px;
 	height: 32px;
 	margin-top: 34px;
-	float: right;
+	right: 0px;
+	top: 0px;
 	margin-right: 5px;
 }
 
@@ -42,8 +44,8 @@
 }
 
 .vote {
-	width: 22px;
-	height: 34px;
+	width: 30px;
+	height: 40px;
 	float: left;
 	margin-left: 10px;
 }
@@ -73,7 +75,7 @@
 }
 
 .mainPost {
-	display: inline-block;
+	/*display: inline-block;*/
 	width: 500px;
 	padding-left: 10px;
 }

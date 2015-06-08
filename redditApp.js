@@ -21,6 +21,9 @@ window.onload = function() {
 	document.body.onclick = function() {
 		document.getElementById("comments").style.display = "none";
 	}
+	document.getElementById("comments").onclick = function(event) {
+		event.stopPropagation();
+	}
 }
 
 function buildPage(data) {

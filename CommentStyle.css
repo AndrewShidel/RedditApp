@@ -194,6 +194,7 @@ a.addCommentLink:hover,a.addCommentLink:active{
     padding-left: 15px;
     border-radius: 10px;
     border: 1px solid #BBB;
+    font-size: 10pt;
 }
 
 #active{
