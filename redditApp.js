@@ -18,6 +18,9 @@ window.onload = function() {
 	getPage(subreddit, function(data) {
 		document.getElementById("posts").innerHTML = buildPage(data);
 	});
+	document.body.onclick = function() {
+		document.getElementById("comments").style.display = "none";
+	}
 }
 
 function buildPage(data) {
@@ -39,9 +42,25 @@ function buildCard(i, data) {
 	html += '<div class="mainPost">';
 	html += '<a target="_blank" class="title" href="'+data.url+'">'+data.title+'</a>';
 	html += '</div>';
-	html += '<div class="commentButton" onclick="openComments(\"'+data.permalink+'\")"></div>';
+	//html += '<div class="commentButton"><img class="commentImg" src="img/comments.png"></div>';
+	html += '<img class="commentImg" src="img/comments.png" onclick="makeComments(\''+data.subreddit+'\',\''+data.permalink+'\', event)">';
 	html += '</div>';
 	return html;
+}
+
+
+
+function makeComments(site, url, event) {
+	event.stopPropagation();
+	document.getElementById("comments").style.display="block";
+	url = "www.reddit.com" + url;
+	com.create({
+		view: "comments",
+		title: "Test post...",
+		siteName: site,
+		url: url
+	});
+	com.render();
 }
 
 function URLQuery () {

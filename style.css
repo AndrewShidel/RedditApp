@@ -1,5 +1,30 @@
+#comments {
+	position: fixed;
+	top: 5%;
+	left: 5%;
+	height: 90%;
+	width: 90%;
+	background-color: #FFF;
+	border: 1px solid #BBB; 
+	display: none;
+	overflow: scroll;
+}
+#posts {
+	position: relative;
+}
+
+.commentImg {
+	width: 32px;
+	height: 32px;
+	margin-top: 34px;
+	float: right;
+	margin-right: 5px;
+}
+
 .card {
+	position: relative;
 	min-height: 100px;
+	border: 1px solid #BBB; 
 }
 
 .rank {
