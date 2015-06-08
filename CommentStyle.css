@@ -63,7 +63,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquot
     position: relative;
     top: 0px;
     left: 0px;
-    background:url(updown.png) 0 0;
+    background:url(img/updown.png) 0 0;
     background-color: transparent;
     width: 22px;
     height: 17px;
@@ -72,7 +72,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquot
     position: relative;
     top: 0px;
     left: 0px;
-    background:url(updown.png) 0 -17px;
+    background:url(img/updown.png) 0 -17px;
     width: 22px;
     height: 17px;
 }
