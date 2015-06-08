@@ -12,7 +12,7 @@ var com = {
 		setTimeout(function(){
 			var msg="LOADING COMMENTS...";
 
-			com.view.innerHTML="<div class='comHeader'><h3 class='comHeaderText'>"+msg+"</h3><img style='height:25px;width:25px;position:relative;top:5px;' src='http://www.paynearme.com/assets/loading-6850ea7c280eb89c1510fa438a8bf9c1.gif'></img></div>";
+			com.view.innerHTML="<div class='comHeader'><h3 class='comHeaderText'>"+msg+"</h3><img style='height:25px;width:25px;position:relative;top:5px;' src='img/loading.gif'></img></div>";
 			com.header=com.view.getElementsByClassName("comHeader")[0];
 		}, 0);
 
