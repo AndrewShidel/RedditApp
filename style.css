@@ -27,7 +27,13 @@
 	position: relative;
 	min-height: 100px;
 	border: 1px solid #BBB; 
+	background-color: #EEE;
 }
+
+.title {
+	margin-right: 20px;
+}
+
 
 .rank {
 	float: left;
@@ -76,8 +82,12 @@
 
 .mainPost {
 	/*display: inline-block;*/
-	width: 500px;
+	width: 100%;
 	padding-left: 10px;
+}
+
+.mainPostInner {
+	padding-right: 48px;
 }
 
 

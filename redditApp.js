@@ -42,9 +42,9 @@ function buildCard(i, data) {
 	if (data.thumbnail.indexOf(".") >= 0) {
 		html += '<a target="_blank" class="thumbnail" href="'+data.url+'"><img src="'+data.thumbnail+'" width="60" height="60"></a>';
 	}
-	html += '<div class="mainPost">';
+	html += '<div class="mainPost"><div class="mainPostInner">';
 	html += '<a target="_blank" class="title" href="'+data.url+'">'+data.title+'</a>';
-	html += '</div>';
+	html += '</div></div>';
 	//html += '<div class="commentButton"><img class="commentImg" src="img/comments.png"></div>';
 	html += '<img class="commentImg" src="img/comments.png" onclick="makeComments(\''+data.subreddit+'\',\''+data.permalink+'\', event)">';
 	html += '</div>';
